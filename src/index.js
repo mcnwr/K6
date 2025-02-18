@@ -11,8 +11,8 @@ export const options = {
     bunServer: {
       exec: "bunServer", // Must match a function name
       executor: "constant-vus",
-      vus: 1000,
-      duration: "10s"
+      vus: 100,
+      duration: "100s"
     },
     // nodeServer: {
     //   exec: "nodeServer", // Must match a function name
