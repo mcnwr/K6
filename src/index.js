@@ -11,7 +11,7 @@ export const options = {
     bunServer: {
       exec: "bunServer", // Must match a function name
       executor: "constant-vus",
-      vus: 10,
+      vus: 1000,
       duration: "10s"
     },
     // nodeServer: {
@@ -24,7 +24,7 @@ export const options = {
 };
 
 const bunServerGetSuccess = new Counter("server_bun_get_success");
-const nodeServerGetSuccess = new Counter("server_node_get_success");
+// const nodeServerGetSuccess = new Counter("server_node_get_success");
 
 export function bunServer() {
   const res = http.get('http://localhost:4000');
