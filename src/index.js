@@ -32,7 +32,12 @@ const opt2 = {
   ]
 }
 
-export const options = opt2
+const opt3 = {
+  vu: 10,
+  duration: "1m"
+}
+
+export const options = opt3
 
 // const bunServerGetSuccess = new Counter("server_bun_get_success");
 // const nodeServerGetSuccess = new Counter("server_node_get_success");
