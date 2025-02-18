@@ -51,7 +51,7 @@ export const options = opt2
 //   }
 // }
 
-export function test() {
+export default function () {
   const res = http.get('http://localhost:4000');
   if (res.status === 200) {
     nodeServerGetSuccess.add(1);
