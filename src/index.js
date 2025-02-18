@@ -1,6 +1,7 @@
 import { sleep } from 'k6';
 import http from 'k6/http';
 import { Counter } from "k6/metrics";
+import { check } from 'k6';
 
 const opt1 = {
   thresholds: {
