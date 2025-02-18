@@ -53,7 +53,7 @@ export const options = opt2
 
 export default function () {
   const res = http.get('http://localhost:4000');
-  if (res.status === 200) {
-    nodeServerGetSuccess.add(1);
-  }
+  check(res, {
+    'is status 2xx': (r) => r.status >= 200 && r.status < 300,
+  });
 }
