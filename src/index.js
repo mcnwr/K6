@@ -1,3 +1,4 @@
+import { sleep } from 'k6';
 import http from 'k6/http';
 import { Counter } from "k6/metrics";
 
@@ -30,6 +31,7 @@ export function bunServer() {
   if (res.status === 200) {
     bunServerGetSuccess.add(1);
   }
+  sleep(1)
 }
 
 // export function nodeServer() {
