@@ -33,7 +33,7 @@ const opt2 = {
 }
 
 const opt3 = {
-  vus: 40,
+  vus: 100,
   duration: "1m"
 }
 
